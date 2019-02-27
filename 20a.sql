@@ -16,7 +16,7 @@ WHERE cct1.kind = 'cast'
               chn.name like '%Tony%Stark%'
               or chn.name like '%Iron%Man%'
           )
-      AND k.keyword in ( 'superhero', 'sequel', 'second-part', 'marvel-comics', 'based-on-comic', 'tv-special',
+      AND k.keyword IN ( 'superhero', 'sequel', 'second-part', 'marvel-comics', 'based-on-comic', 'tv-special',
                          'fight', 'violence'
                        )
       AND kt.kind = 'movie'

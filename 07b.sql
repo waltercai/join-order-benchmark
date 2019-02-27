@@ -1,15 +1,13 @@
-SELECT
-    MIN(n.name) AS of_person,
-    MIN(t.title) AS biography_movie
-FROM
-    aka_name AS an,
-    cast_info AS ci,
-    info_type AS it,
-    link_type AS lt,
-    movie_link AS ml,
-    name AS n,
-    person_info AS pi,
-    title AS t
+SELECT MIN(n.name) AS of_person,
+       MIN(t.title) AS biography_movie
+FROM aka_name AS an,
+     cast_info AS ci,
+     info_type AS it,
+     link_type AS lt,
+     movie_link AS ml,
+     name AS n,
+     person_info AS pi,
+     title AS t
 WHERE
     an.name LIKE '%a%'
     AND it.info = 'mini biography'
